@@ -1,0 +1,70 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    margin: 50px 0px 50px 0px;
+    letter-spacing: 30px;
+   font-size: 60px ;
+   color: rgb(173, 45, 205);
+}
+
+
+nav{
+    display: flex;
+    background-color: rgb(217, 217, 217);
+    padding: 10px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 90%;
+}
+nav a{
+    display: block;
+  padding: 20px 10px;
+color:rgb(79, 7, 147);
+text-decoration: none;
+}
+a:hover{
+    color: rgb(255, 0, 187);
+}
+.fn{
+    display: grid;
+}
+.fi{
+    display: block;
+    float: right;
+}
+.fn .fi{
+    vertical-align:middle;
+}
+label{
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgb(88, 24, 148);
+}
+input[type = text],[type = email]{
+    margin: 10px 10px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 20px;
+    resize: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px  rgb(88, 24, 148) ;
+}
+.rr{
+    padding: 50px;
+}
+.rad{
+   font-weight:bolder ;
+}
+.radi:hover{
+    font-style: italic;
+    color:black;
+    /* background-color: aqua; */
+}
+h2{
+    margin-left: 20px;
+}
+.tb img{
+    width:100px;
+    height: 50px;
+} 

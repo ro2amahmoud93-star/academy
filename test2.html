@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test2.css" title="light-theme">
+    <title>HTML Test</title>
+    <style>
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 45px;
+        letter-spacing: 15px;
+    }
+
+    nav a {
+        padding: 15px 8px;
+    }
+
+    .fi {
+        width: 45%;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        max-width: 100%;
+    }
+
+    table {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    h1 {
+        font-size: 30px;
+        letter-spacing: 5px;
+        margin: 30px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    .fi {
+        float: none;
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+
+    .fn {
+        width: 100%;
+    }
+
+    .fn input[type="text"],
+    .fn input[type="email"] {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    .rr {
+        padding: 15px;
+    }
+
+    .tb img {
+        width: 70px;
+        height: auto;
+    }
+
+    #courses table img {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact table {
+        display: block;
+    }
+
+    #contact tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact th {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .fi {
+        width: 90%;
+    }
+
+    .tb img {
+        width: 50px;
+    }
+
+    .rr {
+        padding: 8px;
+    }
+
+    .radi {
+        font-size: 12px;
+    }
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header> 
+        <h1 style="text-align: center;"> Roua Institut </h1>
+         <nav>
+           <a href="#Home" style="padding: 70;"> Home Page </a> 
+           <a href="#Courses" style="padding: 70;"> Courses </a> 
+           <a href="#contact"style="padding: 70;"> Contact Us </a> 
+           <a href="#Footer" style="padding: 70;"> Footer </a> 
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <Section id="Home">
+        <table> 
+          <tr>
+             <img src="image1.png" class="fi">
+            <th>
+                <form id="FN" class="fn">
+                    <label>First Name</label>
+                    <input type="text" id="First" name="First" >
+               
+                    <label> Last Name</label>
+                    <input type="text" id="Last" name="Last" >
+           
+                    <label> Email </label>
+                    <input type="email" id="email" name="email" >
+                    <input type="submit" >
+                </form>
+            </th>
+            
+          </tr>
+         
+          <tr>
+            <td class="rr">
+                    <label class="rad">  Age  </label>
+                    <input type="radio" id="-18" name="age" form="FN" required> 
+                         <label for="-18" class="radi"> under 18</label>
+                    <input type="radio" id="+18" name="age" form="FN" required>
+                        <label for="+18" class="radi"> above 18</label>
+
+            </td>
+        
+            
+          </tr>
+        </table>
+
+    </Section>
+    <br>
+    <br>
+    <br>
+<section id="courses">
+    <h2 style="color: rgb(83, 43, 226);"> courses </h2>
+    <Table>
+        <Tr>
+            <th>
+                <dl>
+                <img src="image2.png" alt="thir is a picture">
+                <dt> Course name</dt>
+                <dd> course description : this course to learn Html</dd>
+                </dl>
+            </th>
+             <th>
+                <dl>
+                <img src="image2.png" alt="thir is a picture">
+                <dt> Course name</dt>
+                <dd> course description : this course to learn Html</dd>
+                </dl>
+            </th>
+             <th>
+                <dl>
+                <img src="image2.png" alt="thir is a picture">
+                <dt> Course name</dt>
+                <dd> course description : this course to learn Html</dd>
+                </dl>
+            </th>
+
+        </Tr>
+    </Table>
+</section>
+<br>
+<br>
+<br>
+<hr>
+<section id="About">
+   
+        <h2 style="color: rgb(83, 43, 226);"> How We Are    </h2>
+    <article> <i>we are an instutit for serve you and give you hgih aducation
+        with great teatchres like the greatst on ph.Layana Mulhem</i>
+    </article>
+    <br>
+    <br>
+    <h3 style="color: rgb(242, 143, 234); text-align: center;"> Our Team </h3>
+
+<table class="tb">
+    <tr>
+        <th> 
+            <img src="image1.png">
+        </th>
+         <th> 
+            <img src="image1.png">
+        </th>
+         <th> 
+            <img src="image1.png">
+        </th>
+    </tr>
+</table>
+</section>
+<br>
+<br>
+<br>
+<section id="contact">
+
+   <h2 style="color: rgb(83, 43, 226);"> contact Us </h2> 
+    <table>
+<tr>
+    <th> 
+        <dl>
+            <dt> <strong> Email </strong> </dt>
+            <dd> <blockquote> Rouainstitut@gmail.com</blockquote></dd>
+        </dl>
+    </th>
+    <th> 
+        <dl>
+            <dt> <strong> Phone </strong> </dt>
+            <dd> <blockquote> 123456789</blockquote></dd>
+        </dl>
+    </th><th> 
+        <dl>
+            <dt> <strong> Address </strong> </dt>
+            <dd> <blockquote> tartus - Red Helal str</blockquote></dd>
+        </dl>
+    </th>
+</tr>
+
+    </table>
+</section>
+<br>
+<hr>
+<section id="footer">
+    <footer style="text-align: center;"> @2026 </footer>
+</section>
+
+
+
+
+
+</body>
+</html>
